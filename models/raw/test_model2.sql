@@ -16,4 +16,4 @@ select
     customer_orders.most_recent_order_date,
     coalesce(customer_orders.number_of_orders, 0) as number_of_orders
 from raw.jaffle_shop.customers
-left join customer_orders using (id);
+left join customer_orders using (id)
