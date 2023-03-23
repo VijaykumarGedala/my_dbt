@@ -1,8 +1,3 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
 select
     customers.id,
     customers.first_name,
