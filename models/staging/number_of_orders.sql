@@ -1,4 +1,5 @@
 select
+    {{ dbt_utils.generate_surrogate_key(['customers.id', 'customer_orders.id']) }} as sk_no_of_orders,
     customers.id,
     customers.first_name,
     customers.last_name,
